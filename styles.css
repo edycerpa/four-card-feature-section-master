@@ -1,0 +1,130 @@
+:root{
+    --clr-red: hsl(0, 78%, 62%);
+    --clr-cyan: hsl(180, 62%, 55%);
+    --clr-orange: hsl(34, 97%, 64%);
+    --clr-blue: hsl(212, 86%, 64%);
+    --clr-dark-blue: hsl(234, 12%, 34%);
+    --clr-grayish: hsl(229, 6%, 66%);
+    --clr-light-gray: hsl(0, 0%, 98%);
+    --round: 5px;
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    background: var(--clr-light-gray);
+    padding: 75px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 200;
+}
+h2{
+    font-size: 2rem;
+    font-size: 600;
+    margin-top: -20px;
+}
+p{
+    font-weight: 200;
+}
+img{
+    
+}
+.header{
+    text-align: center;
+    max-width: 500px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+}
+.box{
+    background: white;
+    border-radius: var(--round);
+    margin: 20px;
+    padding: 10px 30px;
+    box-shadow:  0 20px 40px -20px var(--clr-grayish);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.box1{
+    border-top: 5px solid var(--clr-cyan);
+}
+.box2{
+    border-top: 5px solid var(--clr-red);
+    margin-bottom: 40px;
+}
+.box3{
+    border-top: 5px solid var(--clr-orange);
+}
+.box4{
+    border-top: 5px solid var(--clr-blue);
+}
+.box p{
+    max-width: 300px;
+    margin-top: -10px;
+}
+.box img{
+    align-self: flex-end;
+}
+
+@media (min-width: 1440px) {
+    .container{
+        flex-direction: row;
+        margin-top: 50px;
+    }
+    .box{
+        margin: 0 20px;        
+    }
+    .box2{
+        margin-bottom: 40px;
+    }
+}
+
+
+
+
+
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+ */
+
+
+/* Footer */
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #2A3039;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 0;
+}
+.attribution a {
+    color:  #FF931E;
+    font-weight: 600;
+    text-decoration: none;
+    background: transparent;
+    border:none;
+    padding:0;
+}
+.attribution a:hover{
+    background: none;
+    border: none;
+    color: white;
+} 
